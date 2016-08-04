@@ -2,12 +2,17 @@
 	<head>
 		<title> Song Grind </title>
 		<script src="./angular.js"></script>
+		<script src="./animate.js"></script>
+		<link rel="stylesheet" href="./stylesheet.css">
 	</head>
 
-	<body>
-		<table>
-		<td></td>
-		</table>
+	<body ng-app="myApp">
+		<h1>lel : <input type="checkbox" ng-model="myCheck"></h1>
+		<div ng-hide="myCheck"></div>
+		<h1> lel </h1>
+		<script>
+			var app = angular.module('myApp', ['ngAnimate']);
+		</script>
 	</body>
 
 </html>
